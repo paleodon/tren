@@ -22,20 +22,20 @@ $(document).ready(function() {
     },
     speed: 2000
   });
-  let audio_vdoh = new Audio('sokol_in.mp3');
-  let audio_vidoh = new Audio('sokol_out.mp3');
+  let audio_vdoh = new Audio('./Tren_files/sokol_in.mp3');
+  let audio_vidoh = new Audio('./Tren_files/sokol_out.mp3');
 	
 	const sound_vdoh = [
-    'sokol_in.mp3',
-    'bear_in.mp3',
-	  'turtle_in.mp3',
-    'wolf_in.mp3'
+    './Tren_files/sokol_in.mp3',
+    './Tren_files/bear_in.mp3',
+    './Tren_files/turtle_in.mp3',
+    './Tren_files/wolf_in.mp3'
 	];
 	const sound_vidoh = [
-    'sokol_out.mp3',
-    'bear_out.mp3',
-  	'turtle_out.mp3',
-    'wolf_out.mp3'
+    './Tren_files/sokol_out.mp3',
+    './Tren_files/bear_out.mp3',
+  	'./Tren_files/turtle_out.mp3',
+    './Tren_files/wolf_out.mp3'
 	];
   $('.select > div').on('click', function() {
     audio_vdoh.pause();
@@ -69,8 +69,8 @@ $(document).ready(function() {
     var timerInt;
     var timer;
     //var audio = audio.pause();
-    var audio = new Audio('ding.mp3');
-    var audio_finish = new Audio('bell_w.wav');
+    var audio = new Audio('./Tren_files/ding.mp3');
+    var audio_finish = new Audio('./Tren_files/bell_w.wav');
     names();
     var ar_offsets = [];
     var pranas = ["vdoh1","vidoh1","zaderj1","vdoh2","vidoh2","zaderj2"];
@@ -115,7 +115,7 @@ $(document).ready(function() {
       clearInterval(timerInt);
       isPlaying = false;
       prepare_done=false;
-      $('.svg-play').attr("src","play-button.svg");
+      $('.svg-play').attr("src","./Tren_files/play-button.svg");
 
       audio_vdoh.pause();
       audio_vidoh.pause();
@@ -178,7 +178,7 @@ $(document).ready(function() {
       if(isPlaying){
           isPlaying = false;
 
-          $('.svg-play').attr("src","play-button.svg");
+          $('.svg-play').attr("src","./Tren_files/play-button.svg");
       }
       prepare_done=false;
 
@@ -222,7 +222,7 @@ $(document).ready(function() {
       if (!isPlaying) {
         //alert(isPlaying);
         isPlaying=true;
-        $('.svg-play').attr("src","pause-button.svg");
+        $('.svg-play').attr("src","./Tren_files/pause-button.svg");
         //document.getElementById("svg-play").src="pause-button.svg";
 
         timerInt = setInterval(function() {
@@ -324,7 +324,7 @@ $(document).ready(function() {
                 $('.t-time').text("Поздравляем!");
                 //$('.oop').text(":)");
                 //timer = ":)";
-                $('.svg-play').attr("src","play-button.svg");
+                $('.svg-play').attr("src","./Tren_files/play-button.svg");
                 //audio_vdoh.pause();
                 //audio_vidoh.pause();
                 audio_finish.play();
@@ -358,7 +358,7 @@ $(document).ready(function() {
         },1000);
       }else{
         initVars(my_choose);
-        $('.svg-play').attr("src","play-button.svg");
+        $('.svg-play').attr("src","./Tren_files/play-button.svg");
         clearInterval(timerInt);
         isPlaying = false;
         stopPlay();
