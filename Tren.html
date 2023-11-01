@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://marideboshir.ru/t/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=.25, user-scalable=yes">
+  <title>Tren</title>
+  <link rel="stylesheet" href="./Tren_files/style.css">
+<script src="./Tren_files/swiper.min.js.Без названия"></script>
+  <link rel="stylesheet" href="./Tren_files/swiper.min.css">
+</head>
+
+<body>
+    <div class="signin-container" style="display: none;">
+<div class="form-signin signin-form" id="signin-form">
+  <h1 class="h3 mb-3 font-weight-normal">Доступ к тренажеру</h1>
+  <label for="inputPassword" class="sr-only">Пароль</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+  <button class="btn btn-lg btn-primary btn-block" style="margin-top: 18px;" id="signin" type="button">Войти</button>
+</div>
+    </div>
+
+  <div id="main">
+   <!-- Swiper -->
+  <div class="swiper-container swiper-container-fade swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 1920px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img src="./Tren_files/6w.jpg"></div>
+      <div class="swiper-slide" data-swiper-slide-index="0" style="width: 1920px; transition-duration: 0ms; opacity: 1; transform: translate3d(-1920px, 0px, 0px);"><img src="./Tren_files/1w.jpg"></div>
+      <div class="swiper-slide" data-swiper-slide-index="1" style="width: 1920px; transition-duration: 0ms; opacity: 1; transform: translate3d(-3840px, 0px, 0px);"><img src="./Tren_files/2w.jpg"></div>
+      <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 1920px; transition-duration: 0ms; opacity: 1; transform: translate3d(-5760px, 0px, 0px);"><img src="./Tren_files/3w.jpg"></div>
+      <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 1920px; transition-duration: 0ms; opacity: 1; transform: translate3d(-7680px, 0px, 0px);"><img src="./Tren_files/4w.jpg"></div>
+      <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" style="width: 1920px; transition-duration: 0ms; opacity: 0; transform: translate3d(-9600px, 0px, 0px);"><img src="./Tren_files/5w.jpg"></div>
+      <div class="swiper-slide" data-swiper-slide-index="5" style="width: 1920px; transition-duration: 0ms; opacity: 0; transform: translate3d(-11520px, 0px, 0px);"><img src="./Tren_files/6w.jpg"></div>
+    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1920px; transition-duration: 0ms; opacity: 0; transform: translate3d(-13440px, 0px, 0px);"><img src="./Tren_files/1w.jpg"></div></div>
+  </div>
+    <div class="o-timer-wrap" id="o-timer-wrap" style="display: block;">
+      <div class="ring" id="ring">
+        <svg class="progress" id="progress_id" viewBox="0 0 300 300">
+          <circle id="ring_duration" class="ring_duration" cx="150" cy="150" r="80"></circle>
+          <circle id="ring_duration_back" class="ring_duration_back" cx="150" cy="150" r="80"></circle>
+        <circle cx="150" cy="150" r="100" id="vdoh1" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: 0; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vdoh1_back" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: 0; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vidoh1" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: -157; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vidoh1_back" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: -157; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vdoh2" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: -314; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vdoh2_back" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: -314; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vidoh2" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: -471; visibility: visible; stroke-width: 20;"></circle><circle cx="150" cy="150" r="100" id="vidoh2_back" stroke-width="40" style="stroke-dasharray: 157, 628; stroke-dashoffset: -471; visibility: visible; stroke-width: 20;"></circle></svg>
+      </div>
+      <div class="o-timer">
+	    <select id="list_of_pranas" class="pranas">
+            <!-- <option>test</option>-->
+        <option value="0">Сокол</option><option value="1">Медведь</option><option value="2">Черепаха</option><option value="3">Волк</option></select>
+		<div class="select">
+			<div class="sokol" data-val="0"><img src="./Tren_files/sokol.jpg" width="100" height="100"></div>
+			<div class="bear" data-val="1"><img src="./Tren_files/bear.jpg" width="100" height="100"></div>
+			<div class="turtle" data-val="2"><img src="./Tren_files/turtle.jpg" width="100" height="100"></div>
+			<div class="wolf active" data-val="3"><img src="./Tren_files/wolf.jpg" width="100" height="100"></div>
+		</div>
+        <!--<span class="t-action"></span>-->
+        <span class="t-time"></span>
+        <span class="oop"></span>
+      </div>
+      <!--<button class="prana">Prana</button>-->
+      <button id="play" class="play">
+        <img class="svg-play" src="./Tren_files/play-button.svg">
+      </button>
+
+      <button id="menu" class="menu">
+        <img class="svg-menu" src="./Tren_files/menu.svg">
+      </button>
+
+      <!--<button class="pause">Pause</button>-->
+      <!--<div class="timer_text"></div>-->
+
+    </div>
+    <div class="menu-style" id="menu-style" viewbox="0 0 300 300" style="display: none;">
+
+      <div class="range-slider">
+          <span class="range-name"> Продолжительность </span>
+          <input class="range-slider__range" type="range" value="7" min="0.5" max="60" step="0.5">
+          <span class="range-slider__value" id="range-slider__value">7</span> минут
+      </div>
+      <div class="buttons-menu">
+        <button id="cancel" class="cancel">
+          <img class="cancel-img" src="./Tren_files/x-circle.svg">
+        </button>
+        <button id="save" class="save">
+          <img class="save-img" src="./Tren_files/save.svg">
+        </button>
+    </div>
+    </div>
+
+  </div>
+
+
+<script src="./Tren_files/jquery-2.2.4.min.js.Без названия"></script>
+<!--<script src="./Tren_files/jquery.cookie.js.Без названия"></script>-->
+<script src="./Tren_files/index.js"></script>
+
+
+
+</body></html>
