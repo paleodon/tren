@@ -1,0 +1,479 @@
+#bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+}
+
+
+
+
+.pranas {
+color: #1F2428;
+font-size: 14px;
+opacity: 0.7;
+
+
+}
+
+
+body {
+  background: #354964;
+  text-align: center;
+  font-family: "Roboto",Arial, "Helvetica Neue", Helvetica, sans-serif;;
+}
+
+
+circle {
+  stroke-width: 10px;
+  fill: transparent;
+}
+.ring {
+    .u-absoluteCenter();
+    .u-flexCenter();
+}
+
+.progress {
+    height: 500px;
+    width: 500px;
+    transform: rotate(-90deg);
+}
+
+.o-timer {
+  position: absolute;
+  top: 0px;
+  font-size: 18px;
+  color:#231B2D;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: default
+  
+
+
+}
+
+.t-time {
+    position: absolute;
+    top: 172px;
+    left: 9px;
+    right: 0;
+}
+
+.play {
+  position: absolute;
+  bottom: -20px;
+  left:33%;
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+
+  border:none;
+  background: none;
+  cursor: pointer;
+  outline: 0 !important;
+
+}
+
+.menu {
+  position: absolute;
+  bottom: -20px;
+  right: 31%;
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+
+  border:none;
+  background: none;
+  cursor: pointer;
+  outline: 0 !important;
+
+}
+
+.cancel, .save {
+  position: relative;
+  bottom: 0px;
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+
+  border:none;
+  background: none;
+  cursor: pointer;
+  outline: 0 !important;
+
+}
+
+
+
+
+
+.svg-play, .svg-menu, .save-img, .cancel-img {
+  stroke-width: 4;
+  stroke: #d6d1d1;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.oop {
+	position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+	color:#231B2D;
+}
+
+#main {
+height: 100%;
+weight:100%;
+
+
+}
+
+.o-timer-wrap {
+
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+z-index: 100;
+}
+
+.menu-style {
+display: none;
+position: absolute;
+top:20%;
+bottom:0;
+right: 0;
+left: 0;
+border: none;
+margin: auto;
+color: #231B2D;
+font-size: 20px;
+
+}
+
+
+.timer_text {
+
+    font-size: 20;
+    opacity: 0.7;
+}
+
+#gray{
+  stroke: #AAA;
+}
+#ring_duration{
+  visibility: visible;
+  position: relative;
+  fill:transparent;
+  stroke-width: 8;
+  stroke: #ff0000;
+  stroke-dasharray: 502.4, 502.4; /* length of arc, circumference of circle */
+  stroke-dashoffset: 502.4; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+  transition: stroke-dashoffset 1s linear, opacity 1s linear;
+  -webkit-transition: stroke-dashoffset 1s linear, opacity 1s linear;
+}
+
+#ring_duration_back{
+  visibility: visible;
+  fill:transparent;
+  stroke-width: 4;
+  opacity: 0.25;
+  stroke: #d6d1d1;
+  stroke-dasharray: 502.4; /* length of arc, circumference of circle */
+  stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+
+}
+#vdoh1_back, #vdoh1, #vidoh1, #vidoh1_back, #vdoh2, #vidoh2, #vidoh2_back, #vdoh2_back {
+	stroke-width: 40!important;
+}
+#vdoh1 {
+	stroke: #66ff66!important;
+}
+
+
+
+
+#vdoh1,#vdoh2{
+  visibility: hidden;
+  position: relative;
+  fill:transparent;
+  stroke: #66ff66!important;
+  stroke-dasharray: 314, 628; /* length of arc, circumference of circle */
+  stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+  transition: stroke-dashoffset 1s linear, opacity 1s linear;
+  -webkit-transition: stroke-dashoffset 1s linear, opacity 1s linear;
+}
+#vdoh1_back,#vdoh2_back{
+  visibility: hidden;
+  fill:transparent;
+  opacity: 0.25;
+  stroke: #524079;
+  stroke-dasharray: 628; /* length of arc, circumference of circle */
+  stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+
+}
+#vidoh1,#vidoh2{
+  visibility: hidden;
+  position: relative;
+  fill:transparent;
+  stroke: #231B2D;
+  stroke-dasharray: 100, 628; /* length of arc, circumference of circle */
+  stroke-dashoffset: -314; /* offset of arc from start point (1/2 arc length + 3/4 circumference) */
+  -webkit-transition: stroke-dashoffset 1s linear, opacity 1s linear;
+  transition: stroke-dashoffset 1s linear, opacity 1s linear;
+}
+#vidoh1_back,#vidoh2_back{
+  visibility: hidden;
+  position: relative;
+  fill:transparent;
+  stroke: #231B2D;
+  opacity: 0.25;
+  stroke-dasharray: 100, 628; /* length of arc, circumference of circle */
+  stroke-dashoffset: -314; /* offset of arc from start point (1/2 arc length + 3/4 circumference) */
+
+}
+
+#zaderj1,#zaderj2{
+  visibility: hidden;
+  position: relative;
+  stroke: #D400AD;
+  stroke-dasharray: 100, 628; /* length of arc, circumference of circle */
+  stroke-dashoffset: -414; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+  -webkit-transition: stroke-dashoffset 1s linear, opacity 1s linear;
+  transition: stroke-dashoffset 1s linear, opacity 1s linear;
+}
+
+#zaderj1_back,#zaderj2_back{
+    visibility: hidden;
+    stroke: #D400AD;
+    opacity: 0.2;
+    stroke-dasharray: 100, 628; /* length of arc, circumference of circle */
+    stroke-dashoffset: -414; /* offset of arc from start point (1/2 arc length + 1/4 circumference) */
+
+}
+
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+// Remove border and padding in Firefox
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,600);
+
+
+input[type=range] {
+  -webkit-appearance: none;
+
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #d6d1d1;
+
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #61D06B;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #d6d1d1;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #d6d1d1;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #61D06B;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #d6d1d1;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #d6d1d1;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #61D06B;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #d6d1d1;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #d6d1d1;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.select {
+	display:flex;
+	margin: -59px auto 0px;
+    width: 400px;
+	transform: translateX(-3px);
+}
+.select div {
+	cursor:pointer;
+}
+.swiper-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+	height: 100vh;
+}	
+.swiper-slide img {
+	min-height: 100%;	
+	min-widht: 100%;
+}
+.select div.active {
+	outline: 2px solid #61D06B;
+}
+.select div {
+	height:100px;
+	margin:0px 1px;
+}
+.menu-style {
+	z-index:100;
+
+}
+#list_of_pranas {
+	display:none;
+}
+
+@media screen and (max-width: 500px) {
+.oop {
+    top: 158px;
+}	
+.t-time {
+    top: 139px;
+}	
+.o-timer-wrap, .ring {
+	width:100%;
+}
+.progress {
+	height:320px;
+	padding: 0px!important;
+	margin: 0px!important;
+	display:block;
+}	
+.ring {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+.select div img {
+	width: 70px;
+	height: 70px;
+	
+}
+.select div {
+    height: 70px;
+}
+.select {
+    width: 100%;
+	display: flex;
+	justify-content: center;
+    transform: translateX(0);
+}
+.play, .menu {
+    position: absolute;
+    bottom: -40px;
+}
+.menu {
+    right: 28%;
+}
+.play {
+    left: 28%;
+}
+
+
+}
+
+.signin-form {
+    width: 240px;
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    margin-left: -120px;
+}
+
+.signin-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+}
